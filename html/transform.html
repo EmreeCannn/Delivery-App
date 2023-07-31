@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usage Of Transform</title>
+    <style>
+      div{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: hsl(200, 70%, 30%);
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        padding: 30px;
+        font-size: 3rem;
+        width: 200px;
+        height: 200px;
+       
+        
+        color: white;
+      }
+      div{
+        transform:rotate(90deg);
+        transform: scale(.5);
+        /* kutuyu verdiğimiz deger kadar büyütür */
+        /* eğer hem x için hem y için farklı  değerler atamak istersek
+        */
+         /* transform: scale(1.3,1.5); */
+         /*ilk değerim x ekseni 2. değerim y ekseni*/
+        /*saat yönünde kutuyu verdiğimiz açı kadar döndürür*/
+        transform:translate(100%);
+        transform: skew(1deg,30deg);
+      }
+    </style>
+</head>
+<body>
+    <div>Box</div>
+</body>
+</html>

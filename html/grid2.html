@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <style>
+        body{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,20%);
+            height: 600px;
+            grid-template-rows: repeat(2,20%);
+            /* container yüksekliği neyse elemanın yüksekliği ona göre 
+            ayarlanır  justify-items:strect; sayesinde*/
+            /* justify-items:start; */
+            /* justify-items: center; 
+            align-items:start;    */
+            /* her bir grid elemanı içerisidenki içeriği değil
+            komple grid elemanlarını hizalamak için */
+            /* justify-content: center; */
+            /* yatayda hizalama yapar */
+            /* align-content: start; */
+          /* dikeyde hizalama yapar */
+        
+
+             /* grid-template-columns:repeat(3,minmax(200px,1fr));  */
+            /*3 tane kolan tanımladık 
+            1. kolan 200 pixsel altına inmez 200 px üzeri yer varsa ortak olarak dağıtılır */
+              /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr));   */
+            /* kolan adetini belirtmedik 200 pizelin atına indiğinde scrolbar çıkmıycak 
+            kaç tane kolon olacağını otomatik ayarlar*/
+            /* olmayan kolanlara yer ayırmak yerine kutularımızı tam kaplatmak 
+            istersek */
+             /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr));   */
+
+
+            background-color: brown;
+            padding: 20px;
+            gap: 10px;  
+        }
+        .item{
+            background-color: goldenrod;
+            padding: 15px;
+            color: white;
+            font-size: 18px;
+        
+        }
+        .item:first-child{
+            align-self:flex-end;
+            justify-self: center;
+            
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="item">Grid Eleman 1</div>
+        <div class="item">Grid Eleman 2</div>
+        <div class="item">Grid Eleman 3</div>
+        <div class="item">Grid Eleman 4</div>
+        <div class="item">Grid Eleman 5</div>
+        <div class="item">Grid Eleman 6</div>
+
+     
+     </div>
+</body>
+</html>
